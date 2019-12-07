@@ -4,60 +4,78 @@
   <title>★웹디자인을 자유자재로★</title>
   <meta charset="utf-8">
   <style>
-      a {
-        color:purple;
-        text-decoration:none;
+      #grid {
+          display:grid;
+          grid-template-columns:1fr 2fr;
+      }
+      #active{
+
+      }
+      #article{
+        padding-left:
       }
       h1 {
+          color:purple;
+          text-decoration: none;
           font-size:45px;
           text-align: center;
+          border-bottom:2px solid yellowgreen;
+          margin:0;
+          padding:20px;
       }
-      .saw {
-           color:gray;
+      h2 {
+        border-right: 2px solid yellowgreen;
+        margin:0;
+        padding:20px;
       }
       .active{
            color:pink;
+           text-decoration: none;
+      }
+      ol {
+        border-right:2px solid yellowgreen;
+        padding:30px;
+        margin:0;
       }
   </style>
  </head>
     <body>
-     <iframe width="500" height="300" src="https://www.youtube.com/embed/pA7PYkW8wCg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      <h1><a href="index.html"><font color="purple">11월 24일 일요일 코딩해!결성</font></a></h1>
+      <h1><a href="index.html">11월 24일 일요일 코딩해!결성</a></h1>
 <!--
   <h1><a href="index.html"><font color="purple">11월 24일 일요일 코딩해!결성</font></a></h1>
 -->
-
-       <h2><u>▶코딩 목표 설정</u><h2>
+      <div id="grid">
         <div>
-          <img src="https://imgur.com/43Hmdp7.jpg" alt="bighero" width="500px" height="300px">
+        <h2>▶코딩 목표 설정</h2>
           <ol>
-              <li><a href="WEB1-class.html" class="saw active">HTML수업정리</a>할 것</li>
+              <li><a href="WEB1-class.html" class="saw active">HTML수업정리</a>할 것ㅡ<a href="box.html" class="saw">CSS수업정리</a></li>
               <li><a href="http://blog.naver.com/euan_um" class="saw">블로그</a>를 포토샵과 <strong><u>html언어</u></strong>로 꾸미기</li>
               <li>한달~두달에 하나씩 웹디자인 관련 자격증을 따기
                 <br>[웹디자인기능사] 1/4필기(예상)/3.23실기(예상)</li>
           </ol>
         </div>
-       <h2 style="margin-top:60px;"><u>▶12월 목표 설정</u></h2>
-          <div>
-            <ul>
-              <li><strong>블로그 일주일 책과 영화 서평 한편씩</strong></li>
-              <li><strong>구체적인 시간 계획 목표를 따를 것</strong></li>
-            </ul>
-          </div>
-       <h2 style=margin-top:60px;><u>▶책을 읽으며 인상적인 구절 기록</u></h2>
-       <h3>11월27일</h3>
         <div>
-          <ul>
-             <li>제가 사람의 몸으로 살아갈 수 있었던 까닭은 제가 앞날을 고민했기 때문이 아니라, 지나가던 남자와 그 아내의 마음에 사랑이 있어 저를 불쌍히 여겼기 때문입니다.
-               <br>두 고아가 살아갈 수 있었던 까닭은 모두가 걱정했기 때문이 아니라, 어느 한 여인의 마음에 사랑이 있어 그 아이들을 가엾게 여겼기 때문입니다.
-               <br>이렇듯 모든 사람은 그들이 자신을 돌보고 앞날을 계획했기 때문에 살아갈 수 있는 것이 아니라, 사람의 마음에 사랑이 있기 때문에 살아갈 수 있는 것입니다.</li>
-               <br>
-             <li>서로 주고받은 게 많아질수록 '우리'는 커져가지만 '당신'은 예전 그대로 '당신'이고 '나'는 예전 그대로 '나'입니다. 우리 두 사람은 결코 사라지는 게 아닙니다.
-               <br> 하지만 둘이서 함께 쌓아놓은 '우리'가 우리 두 사람을 잇는 끈이 됩니다. 내 전부를 상대방에게 줘버리고 나의 존재 자체를 연소시키면 슬퍼질 수밖에 없습니다.
-               <br>나를 잃게 되니까요. 예전 그대로의 나와 예전 그대로의 당신이 만나야 합니다. 그렇게 '우리'를 만들어야 합니다. 함께 만든 '우리'가 점점 커질수록 '나'와 '당신'도 점점 커지고,
-               <br>'우리'라는 거대한 구심점도 영원히 발전할 수 있게 됩니다. 그 '우리'가 바로 친밀한 인간관계입니다.
-               <br>어쩌다가 그 '우리'를 잃게 된다 하더라도 '나'와 행복했던 기억은 남아 있고, 이것을 바탕으로 나는 다시 '우리'를 만들기 시작할 수 있습니다.</li>
-          </ul>
+           <h2><u>▶12월 목표 설정</u></h2>
+              <ul>
+                  <li><strong>블로그 일주일 책과 영화 서평 한편씩</strong></li>
+                  <li><strong>구체적인 시간 계획 목표를 따를 것</strong></li>
+              </ul>
+            </div>
+          </div>
+       <div>
+         <h2 style=margin-top:60px;><u>▶책을 읽으며 인상적인 구절 기록</u></h2>
+         <h3>11월27일</h3>
+            <ul>
+               <li>제가 사람의 몸으로 살아갈 수 있었던 까닭은 제가 앞날을 고민했기 때문이 아니라, 지나가던 남자와 그 아내의 마음에 사랑이 있어 저를 불쌍히 여겼기 때문입니다.
+                 <br>두 고아가 살아갈 수 있었던 까닭은 모두가 걱정했기 때문이 아니라, 어느 한 여인의 마음에 사랑이 있어 그 아이들을 가엾게 여겼기 때문입니다.
+                 <br>이렇듯 모든 사람은 그들이 자신을 돌보고 앞날을 계획했기 때문에 살아갈 수 있는 것이 아니라, 사람의 마음에 사랑이 있기 때문에 살아갈 수 있는 것입니다.</li>
+                 <br>
+               <li>서로 주고받은 게 많아질수록 '우리'는 커져가지만 '당신'은 예전 그대로 '당신'이고 '나'는 예전 그대로 '나'입니다. 우리 두 사람은 결코 사라지는 게 아닙니다.
+                 <br> 하지만 둘이서 함께 쌓아놓은 '우리'가 우리 두 사람을 잇는 끈이 됩니다. 내 전부를 상대방에게 줘버리고 나의 존재 자체를 연소시키면 슬퍼질 수밖에 없습니다.
+                 <br>나를 잃게 되니까요. 예전 그대로의 나와 예전 그대로의 당신이 만나야 합니다. 그렇게 '우리'를 만들어야 합니다. 함께 만든 '우리'가 점점 커질수록 '나'와 '당신'도 점점 커지고,
+                 <br>'우리'라는 거대한 구심점도 영원히 발전할 수 있게 됩니다. 그 '우리'가 바로 친밀한 인간관계입니다.
+                 <br>어쩌다가 그 '우리'를 잃게 된다 하더라도 '나'와 행복했던 기억은 남아 있고, 이것을 바탕으로 나는 다시 '우리'를 만들기 시작할 수 있습니다.</li>
+            </ul>
         </div>
         <h3>11월30일</h3>
          <div>
