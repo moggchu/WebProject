@@ -6,10 +6,12 @@
   <style>
       #grid {
           display:grid;
-          grid-template-columns:1fr 2fr;
+          grid-template-columns:2fr 2fr;
       }
       #active{
-
+        border-right: 2px solid yellowgreen;
+        margin:0;
+        padding:20px;
       }
       #article{
         padding-left:
@@ -22,11 +24,6 @@
           border-bottom:2px solid yellowgreen;
           margin:0;
           padding:20px;
-      }
-      h2 {
-        border-right: 2px solid yellowgreen;
-        margin:0;
-        padding:20px;
       }
       .active{
            color:pink;
@@ -46,7 +43,7 @@
 -->
       <div id="grid">
         <div>
-        <h2>▶코딩 목표 설정</h2>
+        <h2 id="active">▶코딩 목표 설정</h2>
           <ol>
               <li><a href="WEB1-class.html" class="saw active">HTML수업정리</a>할 것ㅡ<a href="box.html" class="saw">CSS수업정리</a></li>
               <li><a href="http://blog.naver.com/euan_um" class="saw">블로그</a>를 포토샵과 <strong><u>html언어</u></strong>로 꾸미기</li>
