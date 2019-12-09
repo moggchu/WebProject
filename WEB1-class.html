@@ -1,8 +1,8 @@
 <!doctype html>
 <html>
   <head>
+      <meta charset="utf-8">
     <title>WEB1 - 수업정리</title>
-    <meta charset="utf-8">
     <style>
         a {
           color:skyblue;
@@ -12,39 +12,55 @@
           color:pink;
           font-size:45px;
           text-align: center;
-          border-bottom:1px solid gray;
-          margin:20px;
+          border-bottom:6px solid gray;
+          margin:0;
           padding:20px;
         }
-        ul {
-          border-left:1px solid:gray;
-          width:400px
+        #grid{
+          border-right:1px solid gray;
+          border-left:1px solid gray;
+          border-bottom:1px solid gray;
+          margin:0;
+          padding:20px;
+        }
+        #article{
+          border-top: 6px solid gray;
+          border-bottom: 6px solid gray;
+          border-left: 6px solid gray;
+          border-right: 6px solid gray;
+        }
+        #gray{
+          border-bottom:1px solid gray;
+          margin:0;
         }
     </style>
   </head>
       <body>
-          <img src="https://imgur.com/hOngI1j.jpg" alt="pengsue" width="400px" height="200px">
+          <img src="https://imgur.com/hOngI1j.jpg" id="article" alt="pengsue" width="400px" height="200px">
         <h1>▶수업정리</h1>
+        <div id="grid">
+          <div id="gray">
         <h2>11월 25일</h2>
-          <div>
              <ul>
                <li>html에 대해서</li>
                <li>코딩을 위한 html editor atom설치</li>
              </ul>
            </div>
+           <div id="gray">
         <h2>11월 26일</h2>
-          <div>
              <ul>
                <li>태그에 대해서</li>
                <li></li>
              </ul>
            </div>
+           <div id="gray">
         <h2>11월 27일</h2>
             <ul>
               <li>삥땅침ㅠㅠ</li>
             </ul>
+          </div>
+          <div id="gray">
         <h2>11월 28일</h2>
-          <div>
              <ul>
                <li>html의 <a href="뼈대구조">뼈대구조</a></li>
                <li>태그의 부모자식관계
@@ -53,28 +69,28 @@
                <li>웹서버 / 웹 호스팅</li>
              </ul>
            </div>
+           <div id="gray">
          <h2>11월 29일</h2>
-           <div>
              <ul>
                 <li><a href="https://github.com/moggchu/webproject/tree/master">github</a> 완료</li>
                 <li><a href="https://imgur.com/">이미지업로드</a> 완료</li>
              </ul>
            </div>
          <h2>12월 2일</h2>
-            <div>
+            <div id="gray">
                   <ul>
                     <li>아프다고 삥땅침ㅠㅠ</li>
                   </ul>
             </div>
+            <div id="gray">
           <h2>12월 3일</h2>
-                  <div>
                         <ul>
                           <li>서버 설치완료</li>
                           <li><a href="http://127.0.0.1/index.html">클라이언트와 서버</a></li>
                         </ul>
                   </div>
+            <div id="gray">
           <h2>12월 4일</h2>
-                <div>
                       <ul>
                         <li>동영상,댓글,채팅 코딩 추가</li>
                         <li>css를 쓰는 이유 - html을 쓰는 것보다 훨씬 효율적이며 간단</li>
@@ -82,23 +98,36 @@
                         <li>a = selector / color(property속성):pink(value); = declaration효과 </li>
                       </ul>
                 </div>
+                <div id="gray">
             <h2>12월 5일</h2>
-                        <div>
                               <ul>
                                 <li>font-size / text-align: center / 이같은 css속성 스스로 알아내기</li>
                                 <li>태그=훨씬포괄적<클래스(.)<아이디(#)=구체적/예외/아이디는 단 한번만 등장해야함(중복불가)</a></li>
                               </ul>
                         </div>
+              <div id="gray">
             <h2>12월 6일</h2>
-                      <div>
                           <ul>
                               <li><a href="box.html">css박스</a>에 대하여</li>
                               <li><img src="https://imgur.com/oXeWbCA.jpg" alt="box"></li>
-                              <li><a href="grid.html">그리드</a> - div=block element / snap=inline element</li>
+                              <li><a href="grid.html">그리드</a> - div=block element / snap=inline element
+                              <br>column=열 / row=행 / ol의 경우 네비게이션인데 ol에 값을 넣으면 안좋음</li>
                               <li><a href="https://caniuse.com/#feat=css-grid">can i use grid?</a></li>
                            </ul>
                        </div>
-
-
+               <div id="gray">
+              <h2>12월 9일</h2>
+                          <ul>
+                            <li>그리드란 무엇인가? - 화면의 폭을 몇개의 칼럼으로 나누고 그 중 일부 칼럼을 묶어서 하나의
+                            <br>class로 간단히 지정하여 사용하면 해당 칼럼의 폭과 다른 묶음의 칼럼의 간격도 일정하게 유지되는 시스템</li>
+                            <li><a href="http://gridcalculator.dk/#/1100/4/20/20">그리드 계산 사이트</a></li>
+                            <li>반응형 웹 - 수많은 화면에서 대응하는 웹페이지</li>
+                            <li><a href="mediaquary.html">미디어 쿼리</a>란? 어떤 조건을 만족할때만 반응함
+                            <br>max-width = 400px보다 작아지면 사라짐 / min-wdith = 400px보다 커지면 사라짐</li>
+                          </ul>
+                          <li>style 지정할때 제목의 띄어쓰기까지 유념해야함</li>
+                          <li>link rel="stylesheet" href="style.css"</li>
+                        </div>
+                  </div>
       </body>
 </html>

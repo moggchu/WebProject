@@ -3,36 +3,46 @@
  <head>
   <title>★웹디자인을 자유자재로★</title>
   <meta charset="utf-8">
+  <!--<link rel="stylesheet" href="style.css">-->
   <style>
-      #grid {
+      #grid{
           display:grid;
           grid-template-columns:2fr 2fr;
-      }
-      #active{
-        border-right: 2px solid yellowgreen;
-        margin:0;
-        padding:20px;
+          margin:0;
+          padding:0;
+          font-size: 20px;
       }
       #article{
-        padding-left:
+        border-left: 2px solid yellowgreen;
+        padding:0;
+        margin:0;
+      }
+      #grid #article{
+        padding-left:30px;
       }
       h1 {
+          border-bottom:1px solid yellowgreen;
+          margin:0;
+          padding:20px;
           color:purple;
           text-decoration: none;
           font-size:45px;
           text-align: center;
-          border-bottom:2px solid yellowgreen;
-          margin:0;
-          padding:20px;
       }
       .active{
            color:pink;
            text-decoration: none;
       }
-      ol {
-        border-right:2px solid yellowgreen;
-        padding:30px;
-        margin:0;
+      @media(max-width:900px){
+          #grid{
+            display:block;
+          }
+          #article{
+            border-left:none;
+          }
+          h1 {
+            border-bottom:none;
+          }
       }
   </style>
  </head>
@@ -43,24 +53,27 @@
 -->
       <div id="grid">
         <div>
-        <h2 id="active">▶코딩 목표 설정</h2>
+        <h2>▶코딩 목표 설정</h2>
           <ol>
-              <li><a href="WEB1-class.html" class="saw active">HTML수업정리</a>할 것ㅡ<a href="box.html" class="saw">CSS수업정리</a></li>
-              <li><a href="http://blog.naver.com/euan_um" class="saw">블로그</a>를 포토샵과 <strong><u>html언어</u></strong>로 꾸미기</li>
+              <li><a href="WEB1-class.html">HTML수업정리</a>할 것ㅡ<a href="css.html">CSS수업정리</a></li>
+              <li><a href="http://blog.naver.com/euan_um">블로그</a>를 포토샵과 <strong><u>html언어</u></strong>로 꾸미기</li>
               <li>한달~두달에 하나씩 웹디자인 관련 자격증을 따기
                 <br>[웹디자인기능사] 1/4필기(예상)/3.23실기(예상)</li>
           </ol>
         </div>
-        <div>
-           <h2><u>▶12월 목표 설정</u></h2>
+        <div id="article">
+           <h2>▶12월 목표 설정</h2>
               <ul>
                   <li><strong>블로그 일주일 책과 영화 서평 한편씩</strong></li>
                   <li><strong>구체적인 시간 계획 목표를 따를 것</strong></li>
+                  <li><strong>영어 단어</strong></li>
+                  <li><strong>웹디자인 관련 자격증 이론 공부</strong></li>
+                  <li><strong>운동</strong></li>
               </ul>
-            </div>
+          </div>
           </div>
        <div>
-         <h2 style=margin-top:60px;><u>▶책을 읽으며 인상적인 구절 기록</u></h2>
+         <h2 style=margin-top:60px;>▶책을 읽으며 인상적인 구절 기록</h2>
          <h3>11월27일</h3>
             <ul>
                <li>제가 사람의 몸으로 살아갈 수 있었던 까닭은 제가 앞날을 고민했기 때문이 아니라, 지나가던 남자와 그 아내의 마음에 사랑이 있어 저를 불쌍히 여겼기 때문입니다.
