@@ -7,3 +7,46 @@
       <body>
       </body>
 </html>
+
+
+<style>
+    #grid{
+        display:grid;
+        grid-template-columns:2fr 2fr;
+        margin:0;
+        padding:0;
+        font-size: 20px;
+    }
+    #article{
+      border-left: 2px solid yellowgreen;
+      padding:0;
+      margin:0;
+    }
+    #grid #article{
+      padding-left:30px;
+    }
+    h1 {
+        border-bottom:1px solid yellowgreen;
+        margin:0;
+        padding:20px;
+        color:purple;
+        text-decoration: none;
+        font-size:45px;
+        text-align: center;
+    }
+    .active{
+         color:pink;
+         text-decoration: none;
+    }
+    @media(max-width:900px){
+        #grid{
+          display:block;
+        }
+        #article{
+          border-left:none;
+        }
+        h1 {
+          border-bottom:none;
+        }
+    }
+</style>
